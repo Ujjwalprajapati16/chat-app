@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon backend/server.js",
     "start": "node backend/server.js",
-    "build": "pm install && npm install --prefix frontend && npm run build --prefix"
+    "build": "pm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
   "keywords": [],
