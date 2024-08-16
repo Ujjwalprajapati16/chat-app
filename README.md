@@ -20,11 +20,14 @@ This project is a real-time chat application built using the MERN (MongoDB, Expr
 - **Real-Time Communication:** Socket.io
 - **Authentication:** JSON Web Tokens (JWT)
 
+## Live Demo
+(click Here)[https://chat-app-pooy.onrender.com]
+
 ## Installation
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/repo-name.git
+git clone https://github.com/Ujjwalprajapati16/chat-app.git
 cd repo-name
 ```
 
