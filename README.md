@@ -23,44 +23,48 @@ This project is a real-time chat application built using the MERN (MongoDB, Expr
 ## Installation
 Clone the repository:
 
-bash
+```bash
 git clone https://github.com/yourusername/repo-name.git
 cd repo-name
+```
 
 Install dependencies:
 
 For backend:
+```bash
 cd backend
 npm install
-
+```
 For frontend:
+```bash
 cd frontend
 npm install
-
+```
 Environment Variables:
 
 Create a .env file in the backend directory and add the following:
+```bash
 MONGO_URI=your_mongo_db_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
-
+```
 Running the Application
 Start the backend server:
 
-bash
-Copy code
+```bash
 cd backend
 npm start
+```
 Start the frontend application:
 
-bash
-Copy code
+```bash
 cd frontend
 npm start
+```
+
 Open your browser and navigate to:
 
-plaintext
-Copy code
+```plaintext
 http://localhost:3000
 Usage
 Sign Up: Register a new user account.
@@ -68,22 +72,24 @@ Log In: Authenticate with existing user credentials.
 Start Chatting: Begin a conversation with active users.
 Real-Time Updates: Experience real-time messaging with instant updates.
 Contributing
+```
 ##Fork the repository.
 Create a new branch:
-bash
-Copy code
+```bash
 git checkout -b feature-branch
+```
 Make your changes and commit them:
-bash
-Copy code
+```bash
 git commit -m 'Add some feature'
+```
 Push to the branch:
-bash
-Copy code
+```bash
 git push origin feature-branch
+```
 Create a pull request.
 License
 This project is licensed under the MIT License.
 
 ##Contact
+Email : ujjwalprajapati154@gmail.com
 For any inquiries or issues, please contact [yourname@example.com].
