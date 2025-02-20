@@ -11,26 +11,29 @@ const Message = ({ message }) => {
   const profilePic = fromMe
     ? authUser.profilePic
     : selectedConversation?.profilePic;
-  const bubbleBgColor = fromMe ? "bg-blue-500" : "";
-
-  const shakeClass = message.shouldShake ? "shake" : "";
+  // Blue for your messages; light gray for others
+  const bubbleBgColor = fromMe
+    ? "bg-blue-500 text-white"
+    : "bg-gray-200 text-gray-900";
+  const shakeClass = message.shouldShake ? "animate-shake" : "";
 
   return (
-    <div className={`chat ${chatClassName}`}>
+    <div className={`chat ${chatClassName} my-2`}>
       <div className="chat-image avatar">
         <div className="w-10 rounded-full">
-          <img alt="Tailwind CSS chat bubble component" src={profilePic} />
+          <img alt="user avatar" src={profilePic} />
         </div>
       </div>
       <div
-        className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass} pb-2`}
+        className={`chat-bubble ${bubbleBgColor} ${shakeClass} max-w-md px-4 py-2 rounded-lg`}
       >
-        {message.message}
-      </div>
-      <div className="chat-footer opacity-50 text-xs flex gap-1 items-center text-black">
-        {formattedTime}
+        <p>{message.message}</p>
+        <div className="text-right text-xs text-opacity-75 mt-1">
+          {formattedTime}
+        </div>
       </div>
     </div>
   );
 };
+
 export default Message;
